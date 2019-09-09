@@ -54,51 +54,64 @@ body{
 
 }
 
+@media (min-width: 764px){
+	.content{
+		display: flex;
+	}	
+
+	.nav-header{
+		display: flex;justify-content: space-between;align-items: center;padding: 15px 0px 0px 0px;
+	}
+
+	nav ul{
+		border: 0.5px rgb(31, 32, 27) solid;
+		margin: 10px 0px !important;
+		clear: both;
+		padding: 20px 30px;
+		display: flex;
+		background-image: linear-gradient(#838383, rgb(31, 32, 27));
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	nav ul li{
+		list-style: none;
+		display: inline-block;
+		color: white;
+	}
+
+	nav ul li a{
+		font-size: 16px;
+		font-weight: bold;
+		padding: 20px;
+		cursor: pointer;
+	}
+
+	nav ul li a:hover{
+		background-color: rgb(31, 32, 27);
+	}
+
+	.quicklinks{
+		width: 30%;
+		min-height: 100px;
+		color: skyblue;
+		font-weight: bold;
+	}
+}
+
+
+
 nav{
 	background-color: rgb(42, 42, 42);
 	color: white;
 }
-
-nav ul{
-	border: 0.5px rgb(31, 32, 27) solid;
-	margin: 10px 0px !important;
-	clear: both;
-	padding: 20px 30px;
-	display: flex;
-	background-image: linear-gradient(#838383, rgb(31, 32, 27));
-	justify-content: flex-start;
-	align-items: center;
-}
-
-nav ul li{
-	list-style: none;
-	display: inline-block;
-	color: white;
-}
-
-nav ul li a{
-	font-size: 16px;
-	font-weight: bold;
-	padding: 20px;
-	cursor: pointer;
-}
-
-nav ul li a:hover{
-	background-color: rgb(31, 32, 27);
-}
-
 
 .reviews{
 	width: 70%;
 	min-height: 100px;
 }
 
-.quicklinks{
-	width: 30%;
-	min-height: 100px;
-	color: skyblue;
-	font-weight: bold;
-}
+
 
 .container-fluid{
 	margin: 8px;
@@ -122,3 +135,71 @@ nav ul li a:hover{
 	margin: 10px;
 	background-color: #f3f3f3;
 }
+.nav-menu-mobile{display: none;}
+.search{
+	margin-right: 20px;
+}
+
+@media (max-width: 764px){
+	nav{
+		display: flex;
+	}
+
+	.container{
+		background-color: #ffffff;
+		width: 100%;
+	}
+
+	.search{
+		display: none !important;
+	}
+
+
+	.quicklinks{
+		width: 100%;
+		
+	}
+	.reviews{
+		width: 100%;
+	}
+
+
+	.nav-header{
+		display: flex;
+	}
+
+	.nav-menu-mobile{
+		color: black;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		bottom: 0;
+		margin: 0;
+		height: 55px;
+		width: 100%;
+		padding: 0px;
+		background-color: #ffffff;
+	}
+
+	.nav-menu-lg{display: none;}
+	.nav-menu-mobile  li{
+		padding: 5px 0px;
+		width: calc(100%/3);
+		text-align: center;
+		list-style: none;
+	}
+	.nav-menu-mobile  li:hover{
+		background-color: grey;
+	}
+}
+
+
+
+
+
+
+
+
+
+

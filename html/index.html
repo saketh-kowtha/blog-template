@@ -4,15 +4,26 @@
 	<title>Blog Ui</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-
+	<script type="text/javascript">
+		window.onload=function(){
+			document.querySelectorAll('nav ul li').forEach(function(e){
+				e.onclick = function(){
+					scroll_to_div(this.getAttribute('to'))
+				}
+			})
+		}
+		function scroll_to_div(ele){
+			document.getElementById(ele).scrollIntoView({behavior: "smooth", scrollY: '10px'});
+		}
+	</script>
 </head>
 <body>
 	<div class="container">
 		<nav>
-			<div style="display: flex;justify-content: space-between;align-items: center;padding: 15px 0px 0px 0px;">
+			<div class="nav-header">
 				<img src="../assests/blog.png" class='logo'/>
 				<h2>Title</h2>
-				<div style="margin-right: 20px;">
+				<div class="search">
 					<div><input placeholder="Search" class="input" type="" name=""><button class="button-search">Search</button></div>
 					<div class="social-icons">
 						<img src='../assests/fb.png' />
@@ -22,21 +33,26 @@
 
 				</div>
 			</div>
-			<ul>
-				<li><a>Home</a></li>
-				<li><a>Cast & Crew</a></li>
-				<li><a>Rating</a></li>
+			<ul class="nav-menu-lg">
+				<li to='review'><a>Home</a></li>
+				<li to='cast'><a>Cast & Crew</a></li>
+				<li to='ratings'><a>Rating</a></li>
+			</ul>			
+			<ul  class="nav-menu-mobile">
+				<li to='review'><a><img src='../assests/home.svg'/></a></li>
+				<li to='cast'><a><img src='../assests/cast.svg'/></a></li>
+				<li to='ratings'><a><img src='../assests/star.svg'/></a></li>
 			</ul>
 		</nav>
-		<div style="display: flex;">
-			<div class="reviews">
+		<div class='content'>
+			<div id='review' class="reviews">
 				<div class="container-fluid">
 					<h2 style="text-align: center;">Sub title</h2>
 					<div style="text-align: center;color: grey;font-size: 12px;">Date</div>
 					<p>Content Goes here....</p>
 				</div>
 			</div>
-			<div class="quicklinks">
+			<div  class="quicklinks">
 				<div class="container-fluid">
 					<ul>
 						<li>Link 1</li>
@@ -47,7 +63,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="cast">Cast & Crew</div>
+		<div id ='cast' class="cast">Cast & Crew</div>
+		<div id ='ratings' class="cast">Ratings</div>
 		<div style="text-align: center;">Copyright © goes here</div>
 	</div>
 </body>
