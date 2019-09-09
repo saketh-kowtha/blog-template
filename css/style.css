@@ -1,0 +1,124 @@
+body{
+	margin: 0;
+	background-color: rgb(207, 206, 203);
+	font-family: 'Varela Round', sans-serif;
+}
+
+.container{
+	width: 85%;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);	
+}
+
+.button-search{
+	font-size: 16px;
+	padding: 8px;
+	border: none;
+	border-radius: 0px 6px 6px 0px;
+	cursor: pointer;
+	color: rgb(31, 32, 27);
+	font-weight: bold;
+	outline: none;
+	background-image: linear-gradient(#FFA500, #FFA500);
+	background-image: -webkit-linear-gradient(#FFA500, #FFA500);
+}
+
+.social-icons{
+	padding: 5px;
+}
+
+.social-icons img{
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	cursor: pointer;
+}
+
+.logo{
+	width: 60px;
+	height: 60px;
+	margin: 5px 20px;
+}
+
+.input{
+	border:none;
+	border-radius: 6px 0px 0px 6px;
+	font-size: 16px;
+	padding: 8px;
+	outline: none;
+	background: rgba(#000, 0.3);
+
+}
+
+nav{
+	background-color: rgb(42, 42, 42);
+	color: white;
+}
+
+nav ul{
+	border: 0.5px rgb(31, 32, 27) solid;
+	margin: 10px 0px !important;
+	clear: both;
+	padding: 20px 30px;
+	display: flex;
+	background-image: linear-gradient(#838383, rgb(31, 32, 27));
+	justify-content: flex-start;
+	align-items: center;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	color: white;
+}
+
+nav ul li a{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px;
+	cursor: pointer;
+}
+
+nav ul li a:hover{
+	background-color: rgb(31, 32, 27);
+}
+
+
+.reviews{
+	width: 70%;
+	min-height: 100px;
+}
+
+.quicklinks{
+	width: 30%;
+	min-height: 100px;
+	color: skyblue;
+	font-weight: bold;
+}
+
+.container-fluid{
+	margin: 8px;
+	padding: 5px;
+	background-color: #f3f3f3;
+}
+
+.container-fluid ul{
+	padding: 0px !important;
+}
+
+.container-fluid ul li{
+	list-style: none;
+	padding: 15px 20px;
+	border-bottom: 1px rgba(0,0,0,0.2) solid;
+}
+
+.cast{
+	min-height: 80px;
+	padding: 10px;
+	margin: 10px;
+	background-color: #f3f3f3;
+}
