@@ -1,1 +1,1 @@
-# blog-template
+# Blog UI
